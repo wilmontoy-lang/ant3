@@ -86,7 +86,7 @@ export default function GraphView() {
       style:[
         // Secretaría: large hex-like circles, colored per secretaría, bright text
         {selector:'node[type="secretaria"]',style:{
-          width:70,height:70,'background-color':'data(scolor)',
+          width:70 as any,height:70 as any,'background-color':'data(scolor)',
           label:'data(label)',color:'#0a0f1a',
           'text-valign':'center','text-halign':'center',
           'font-size':10,'font-weight':'bold','font-family':'Space Mono,monospace',
@@ -94,7 +94,7 @@ export default function GraphView() {
           'border-width':2,'border-color':'rgba(255,255,255,.25)'}},
         // Dependencia: medium, uses secretaría color (dimmed)
         {selector:'node[type="dependencia"]',style:{
-          width:22,height:22,'background-color':'data(scolor)',
+          width:22 as any,height:22 as any,'background-color':'data(scolor)',
           'background-opacity':0.55,
           label:'data(label)',color:'rgba(255,255,255,.85)',
           'text-valign':'bottom','text-halign':'center','text-margin-y':5,
